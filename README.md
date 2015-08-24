@@ -3,6 +3,11 @@ A little C header to help debugging with some printing or just output error easi
 
 To desactivate the debugging messages compile with -DNDEBUG
 
+Read the description of the function below or clone the repo
+and then do `$ rm -f example && make example && ./example` to launch the example
+file.
+
+
 # debug(message, ...)
 ```
 int main(int argc, char const *argv[]) {
@@ -37,7 +42,7 @@ int main(int argc, char const *argv[]) {
 int main(int argc, char const *argv[]) {
    char c = 5;
    printbits(c, sizeof(char));
-   // print: 0000101
+   // print: c = 0000101
 
    return 0;
 }
