@@ -18,5 +18,5 @@
 #define printbits(V,S)for(int i=(S*8)-1;i>=0;i--){putchar('0'+((V>>i)&1));}printf("\t");
 #endif
 #define clean_errno()(errno==0?"NONE":strerror(errno))
-  #define check(P,L,M,...)if(!(P)){fprintf(stderr,"[ERROR] (%s:%d,%s --> errno: %s): "M"\n",__FILE__,__LINE__,__func__,clean_errno(),##__VA_ARGS__);errno=0;goto L;}
+#define check(P,L,M,...)if(!(P)){fprintf(stderr,"[ERROR] (%s:%d,%s --> errno: %s): "M"\n",__FILE__,__LINE__,__func__,clean_errno(),##__VA_ARGS__);errno=0;goto L;}
 #endif
