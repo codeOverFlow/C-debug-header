@@ -1,6 +1,6 @@
 /*************************************************
  * author: Adrien Bodineau
- * github: CodeOverFlow
+ * github: codeOverFlow
  * License: GPL V2
  ************************************************/
 #ifndef DBG_H
