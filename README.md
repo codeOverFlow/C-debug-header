@@ -24,7 +24,7 @@ int main(int argc, char const *argv[]) {
 # var_val(variable, format)
 ```
 int main(int argc, char const *argv[]) {
-   var_val(argc, "%d);
+   var_val(argc, "%d");
    // print: argc = 1 
 
    return 0;
@@ -36,7 +36,7 @@ int main(int argc, char const *argv[]) {
 ```
 int main(int argc, char const *argv[]) {
    char c = 5;
-   var_val(c, "%d);
+   printbits(c, sizeof(char));
    // print: 0000101
 
    return 0;
