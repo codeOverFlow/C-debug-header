@@ -3,6 +3,7 @@
 
 int main(int argc, char* argv[]) {
    char c = 5;
+   // check if there is at least 3 arguments
    check(argc == 2, error, "argc = %d and not 2", argc);
    
    printf("never executed due to the error");
